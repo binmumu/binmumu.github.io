@@ -20,11 +20,12 @@ header-img: "img/post-bg-about.jpg"
     <p>这是我的利用
         <a href="https://pages.github.com/">GitHub Pages</a>与
         <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的 个人博客。
-        其目的有三：一、记录自己生活随感，因为我的语言能力真的很差，希望通过写作的方式提高自己。
-        二、记录学习笔记，希望能够督促自己能够上进，而不是安于现状。我记得有一句话，人一但舒服久了就死了（原话已经忘记，大意如此）。
-        三、我想把自己的一些想法付诸于实践，而不是思想上的巨人。
     </p>
 
+    <p>其目的有三：</p>
+    <p>一、记录自己生活随感，因为我的语言能力真的很差，希望通过写作的方式提高自己。
+        二、记录学习笔记，希望能够督促自己能够上进，而不是安于现状。我记得有一句话，人一但舒服久了就死了（原话已经忘记，大意如此）。
+        三、我想把自己的一些想法付诸于实践，而不是思想上的巨人。</p>
     <p>我会不定期更新技术笔记以及读书心得，定期（每周日）更新随笔，暂时取名《梦里花》。
         希望大家多多支持，提出宝贵意见以及批评，我的邮箱和微信都在我的头像下方。
         拒绝恶意捣乱，我很渺小，不想以此表达什么，只想认真的活。</p>
@@ -80,12 +81,11 @@ header-img: "img/post-bg-about.jpg"
 <div id="gitalk-container"></div>
     <script type="text/javascript">
     var gitalk = new Gitalk({
-    clientID: '{{site.gitalk.clientID}}',
-    clientSecret: '{{site.gitalk.clientSecret}}',
-    repo: '{{site.gitalk.repo}}',
-    owner: '{{site.gitalk.owner}}',
-    admin: ['{{site.gitalk.admin}}'],
-    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
+    clientID: '{{e900a0f4fcb896b895e0}}',
+    clientSecret: '{{5c642ceb3c2f31bf91406bd50559f19c73cab75f}}',
+    repo: '{{https://github.com/binmumu/binmumu.github.io/issues}}',
+    owner: '{{binmumu}}',
+    admin: ['{{binmumu}}'],
     id: 'about',
     });
     gitalk.render('gitalk-container');
@@ -93,28 +93,5 @@ header-img: "img/post-bg-about.jpg"
 {% endif %}
 <!-- Gitalk end -->
 
- <!-- disqus 评论框 start  -->
-{% if site.disqus.enable %}
 
-<div class="comment">
-    <div id="disqus_thread" class="disqus-thread">
-    </div>
-</div>
-<!-- disqus 评论框 end -->
-
-<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus.username}}";
-    var disqus_identifier = "{{site.disqus.username}}/{{page.url}}";
-    var disqus_url = "{{site.url}}{{page.url}}";
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<!-- disqus 公共JS代码 end -->
-{% endif %}
 

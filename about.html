@@ -79,14 +79,15 @@ header-img: "img/post-bg-aboutme.jpg"
 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
-    <script type="text/javascript">
+<script type="text/javascript">
     var gitalk = new Gitalk({
-    clientID: '{{e900a0f4fcb896b895e0}}',
-    clientSecret: '{{5c642ceb3c2f31bf91406bd50559f19c73cab75f}}',
-    repo: '{{https://github.com/binmumu/binmumu.github.io/issues}}',
-    owner: '{{binmumu}}',
-    admin: ['{{binmumu}}'],
-    id: 'about',
+        clientID: '{{site.gitalk.clientID}}',
+        clientSecret: '{{site.gitalk.clientSecret}}',
+        repo: '{{site.gitalk.repo}}',
+        owner: '{{site.gitalk.owner}}',
+        admin: ['{{site.gitalk.admin}}'],
+        distractionFreeMode: {{site.gitalk.distractionFreeMode}},
+    id: window.location.pathname,
     });
     gitalk.render('gitalk-container');
 </script>

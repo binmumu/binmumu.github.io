@@ -12,7 +12,7 @@ github_repo: "https://github.com/binmumu/binmumu.github.io.git" # you code repos
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "思考、行走、回首"
-sidebar-avatar: /img/about-Jingzhe-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/about-Jingzhe-man.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
 RSS: false
